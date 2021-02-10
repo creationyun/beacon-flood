@@ -97,7 +97,7 @@ int main(int argc, char* argv[]) {
 		Dot11Management dot11_mgmt;
 		dot11_mgmt.timestamp = 0;
 		dot11_mgmt.beacon_interval = 0x0064;
-		dot11_mgmt.capabilities_info = 0x0c11;
+		dot11_mgmt.capabilities_info = 0x1501;
 
 		memcpy(payload + payload_len, (unsigned char *)&dot11_mgmt, sizeof(dot11_mgmt));
 		payload_len += sizeof(dot11_mgmt);
